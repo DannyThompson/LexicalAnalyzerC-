@@ -1,0 +1,98 @@
+Input file: test9.ss
+   1: +123identifier-int/abc.456*i%--++
+	NUMLIT_T        +123
+	SYMBOL_T        identifier
+	MINUS_T         -
+	SYMBOL_T        int
+	DIV_T           /
+	SYMBOL_T        abc
+	NUMLIT_T        .456
+	MULT_T          *
+	SYMBOL_T        i
+Error at 1,29: Invalid character found: %
+	ERROR_T         %
+	MINUS_T         -
+	MINUS_T         -
+	PLUS_T          +
+	PLUS_T          +
+   2: i1 ===!=_i2><>=___<= &&||main!float
+	SYMBOL_T        i1
+	EQUALTO_T       =
+	EQUALTO_T       =
+	EQUALTO_T       =
+Error at 2,7: Invalid character found: !
+	ERROR_T         !
+	EQUALTO_T       =
+Error at 2,9: Invalid character found: _
+	ERROR_T         _
+	SYMBOL_T        i2
+	GT_T            >
+	LT_T            <
+	GTE_T           >=
+Error at 2,16: Invalid character found: _
+	ERROR_T         _
+Error at 2,17: Invalid character found: _
+	ERROR_T         _
+Error at 2,18: Invalid character found: _
+	ERROR_T         _
+	LTE_T           <=
+Error at 2,22: Invalid character found: &
+	ERROR_T         &
+Error at 2,23: Invalid character found: &
+	ERROR_T         &
+Error at 2,24: Invalid character found: |
+	ERROR_T         |
+Error at 2,25: Invalid character found: |
+	ERROR_T         |
+	SYMBOL_T        main
+Error at 2,30: Invalid character found: !
+	ERROR_T         !
+	SYMBOL_T        float
+   3: & 123.456|123.^while <<.456>>$void
+Error at 3,1: Invalid character found: &
+	ERROR_T         &
+	NUMLIT_T        123.456
+Error at 3,10: Invalid character found: |
+	ERROR_T         |
+	NUMLIT_T        123.
+Error at 3,15: Invalid character found: ^
+	ERROR_T         ^
+	SYMBOL_T        while
+	LT_T            <
+	LT_T            <
+	NUMLIT_T        .456
+	GT_T            >
+	GT_T            >
+Error at 3,30: Invalid character found: $
+	ERROR_T         $
+	SYMBOL_T        void
+   4: ~abc.xyz}123.xyz){ #(else@;
+Error at 4,1: Invalid character found: ~
+	ERROR_T         ~
+	SYMBOL_T        abc
+Error at 4,5: Invalid character found: .
+	ERROR_T         .
+	SYMBOL_T        xyz
+Error at 4,9: Invalid character found: }
+	ERROR_T         }
+	NUMLIT_T        123.
+	SYMBOL_T        xyz
+	RPAREN_T        )
+Error at 4,18: Invalid character found: {
+	ERROR_T         {
+Error at 4,20: Invalid character found: #
+	ERROR_T         #
+	LPAREN_T        (
+	SYMBOL_T        else
+Error at 4,26: Invalid character found: @
+	ERROR_T         @
+Error at 4,27: Invalid character found: ;
+	ERROR_T         ;
+   5: ,?:
+Error at 5,1: Invalid character found: ,
+	ERROR_T         ,
+Error at 5,2: Invalid character found: ?
+	ERROR_T         ?
+Error at 5,3: Invalid character found: :
+	ERROR_T         :
+25 errors found in input file

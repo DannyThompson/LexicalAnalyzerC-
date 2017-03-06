@@ -1,0 +1,100 @@
+Input file: test7.ss
+   1: symbol 1 1. 1.2 .2 car cdr cons if else and or not define number? symbol? lambda list? zero? null? char? string? error + - / * = > < >= <= ( ) '
+	SYMBOL_T        symbol
+	NUMLIT_T        1
+	NUMLIT_T        1.
+	NUMLIT_T        1.2
+	NUMLIT_T        .2
+	CAR_T           car
+	CDR_T           cdr
+	CONS_T          cons
+	IF_T            if
+	SYMBOL_T        else
+	AND_T           and
+	OR_T            or
+	NOT_T           not
+	DEFINE_T        define
+	NUMBERP_T       number?
+	SYMBOLP_T       symbol?
+	SYMBOL_T        lambda
+	LISTP_T         list?
+	ZEROP_T         zero?
+	NULLP_T         null?
+	CHARP_T         char?
+	STRINGP_T       string?
+	SYMBOL_T        error
+	PLUS_T          +
+	MINUS_T         -
+	DIV_T           /
+	MULT_T          *
+	EQUALTO_T       =
+	GT_T            >
+	LT_T            <
+	GTE_T           >=
+	LTE_T           <=
+	LPAREN_T        (
+	RPAREN_T        )
+	QUOTE_T         '
+   2: ; ignore this line please (cdr '(abcd) '(efgh))
+Error at 2,1: Invalid character found: ;
+	ERROR_T         ;
+	SYMBOL_T        ignore
+	SYMBOL_T        this
+	SYMBOL_T        line
+	SYMBOL_T        please
+	LPAREN_T        (
+	CDR_T           cdr
+	QUOTE_T         '
+	LPAREN_T        (
+	SYMBOL_T        abcd
+	RPAREN_T        )
+	QUOTE_T         '
+	LPAREN_T        (
+	SYMBOL_T        efgh
+	RPAREN_T        )
+	RPAREN_T        )
+   3: "string literal test"
+Error at 3,1: Invalid character found: "
+	ERROR_T         "
+	SYMBOL_T        string
+	SYMBOL_T        literal
+	SYMBOL_T        test
+Error at 3,21: Invalid character found: "
+	ERROR_T         "
+   4: symbol 1 1.2 define number? anobvious$error*thing (cdr '(car (cons '(abc) '(def)))
+	SYMBOL_T        symbol
+	NUMLIT_T        1
+	NUMLIT_T        1.2
+	DEFINE_T        define
+	NUMBERP_T       number?
+	SYMBOL_T        anobvious
+Error at 4,38: Invalid character found: $
+	ERROR_T         $
+	SYMBOL_T        error
+	MULT_T          *
+	SYMBOL_T        thing
+	LPAREN_T        (
+	CDR_T           cdr
+	QUOTE_T         '
+	LPAREN_T        (
+	CAR_T           car
+	LPAREN_T        (
+	CONS_T          cons
+	QUOTE_T         '
+	LPAREN_T        (
+	SYMBOL_T        abc
+	RPAREN_T        )
+	QUOTE_T         '
+	LPAREN_T        (
+	SYMBOL_T        def
+	RPAREN_T        )
+	RPAREN_T        )
+	RPAREN_T        )
+   5: anobvious$error*thing2
+	SYMBOL_T        anobvious
+Error at 5,10: Invalid character found: $
+	ERROR_T         $
+	SYMBOL_T        error
+	MULT_T          *
+	SYMBOL_T        thing2
+5 errors found in input file

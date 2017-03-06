@@ -1,0 +1,8 @@
+Input file: test2.ss
+   1: car+cdr-cons/if*else=and>
+   2: or>not>=define<=number?(symbol?)list?'
+   3: zero?null?char?string?caddddddddr
+   4: somemoresymbolsandalineofnumbers
+   5: 112312.23.34123-1-2.2+15+.5+5.
+   6: 
+0 errors found in input file

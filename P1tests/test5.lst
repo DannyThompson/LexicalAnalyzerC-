@@ -1,0 +1,19 @@
+Input file: test5.ss
+   1: (car '(abc def ghi))
+   2: (cons 'abd '(1 2 3))
+   3: (cons 'a 'b)
+   4: (cons (car '(a b c d)) (cddr '(a b c d)))
+   5: (cons (cadr '(a b c d)) (caddr '(a b c d)))
+   6: 
+   7: (define (two-thirds L)
+   8: 	(if (list? L)
+   9: 		(if (< (length L) 3)
+  10: 			L
+  11: 			(cons (car L) (cons (cadr L) (two-thirds (cdddr L))))
+  12: 		)
+  13: 		'()
+  14: 	)
+  15: )
+  16: 
+  17: (two-thirds '(a b c 1 2 3 x y z 7 8 9))
+0 errors found in input file

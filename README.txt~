@@ -1,0 +1,13 @@
+This is the Lexical Analyzer for Project 1
+CS 460 - Spring 2016.
+
+Written by: Daniel Thompson && Zeyad Ayoub
+
+What works: The program accurately detects all of the specified identifiers. 
+
+
+What doesn't work:
+     	     To our Knowledge, nothing isn't working other than an issue with '&'
+	     All unrecognized characters are caught, but for whatever reason if there is a space after a '&', it breaks.
+	     Additionally, our .lst file isn't in the format you specified because it was the last thing we did and didn't realize this until right before.
+

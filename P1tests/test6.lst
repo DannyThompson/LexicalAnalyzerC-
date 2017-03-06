@@ -1,0 +1,15 @@
+Input file: test6.ss
+   1: this file contains
+   2: int double ; ++ += and +
+Error at 2,12: Invalid character found: ;
+   3:     int var;
+Error at 3,12: Invalid character found: ;
+   4: var += 123456789 + abc++;
+Error at 4,25: Invalid character found: ;
+   5: var+=123456789+abc++;
+Error at 5,21: Invalid character found: ;
+   6: This     line contains@least $3$errors
+Error at 6,23: Invalid character found: @
+Error at 6,30: Invalid character found: $
+Error at 6,32: Invalid character found: $
+7 errors found in input file

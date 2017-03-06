@@ -1,0 +1,37 @@
+Input file: test3.ss
+   1: car+cdr-cons/if*else=and>
+	CAR_T           car
+	PLUS_T          +
+	CDR_T           cdr
+	MINUS_T         -
+	CONS_T          cons
+	DIV_T           /
+	IF_T            if
+	MULT_T          *
+	SYMBOL_T        else
+	EQUALTO_T       =
+	AND_T           and
+	GT_T            >
+   2: or>not>=define<=number?(symbol?)list?'
+	OR_T            or
+	GT_T            >
+	NOT_T           not
+	GTE_T           >=
+	DEFINE_T        define
+	LTE_T           <=
+	NUMBERP_T       number?
+	LPAREN_T        (
+	SYMBOLP_T       symbol?
+	RPAREN_T        )
+	LISTP_T         list?
+	QUOTE_T         '
+   3: zero?%null?#char?string?
+	ZEROP_T         zero?
+Error at 3,6: Invalid character found: %
+	ERROR_T         %
+	NULLP_T         null?
+Error at 3,12: Invalid character found: #
+	ERROR_T         #
+	CHARP_T         char?
+	STRINGP_T       string?
+2 errors found in input file

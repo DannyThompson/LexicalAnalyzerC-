@@ -1,0 +1,43 @@
+Input file: test8.ss
+   1: (define (lambda (x y) (cons x y)))
+	LPAREN_T        (
+	DEFINE_T        define
+	LPAREN_T        (
+	SYMBOL_T        lambda
+	LPAREN_T        (
+	SYMBOL_T        x
+	SYMBOL_T        y
+	RPAREN_T        )
+	LPAREN_T        (
+	CONS_T          cons
+	SYMBOL_T        x
+	SYMBOL_T        y
+	RPAREN_T        )
+	RPAREN_T        )
+	RPAREN_T        )
+   2: <=>=<>)
+	LTE_T           <=
+	GTE_T           >=
+	LT_T            <
+	GT_T            >
+	RPAREN_T        )
+   3: (car(cdr'(1 2 3)))
+	LPAREN_T        (
+	CAR_T           car
+	LPAREN_T        (
+	CDR_T           cdr
+	QUOTE_T         '
+	LPAREN_T        (
+	NUMLIT_T        1
+	NUMLIT_T        2
+	NUMLIT_T        3
+	RPAREN_T        )
+	RPAREN_T        )
+	RPAREN_T        )
+   4: (+ 1.23 466)
+	LPAREN_T        (
+	PLUS_T          +
+	NUMLIT_T        1.23
+	NUMLIT_T        466
+	RPAREN_T        )
+0 errors found in input file

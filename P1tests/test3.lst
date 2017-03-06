@@ -1,0 +1,7 @@
+Input file: test3.ss
+   1: car+cdr-cons/if*else=and>
+   2: or>not>=define<=number?(symbol?)list?'
+   3: zero?%null?#char?string?
+Error at 3,6: Invalid character found: %
+Error at 3,12: Invalid character found: #
+2 errors found in input file

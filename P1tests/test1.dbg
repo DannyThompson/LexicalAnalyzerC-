@@ -1,0 +1,58 @@
+Input file: test1.ss
+   1: car + cdr - cons / if * else = and >
+	CAR_T           car
+	PLUS_T          +
+	CDR_T           cdr
+	MINUS_T         -
+	CONS_T          cons
+	DIV_T           /
+	IF_T            if
+	MULT_T          *
+	SYMBOL_T        else
+	EQUALTO_T       =
+	AND_T           and
+	GT_T            >
+   2: or > not >= define <= number? ( symbol? ) list? '
+	OR_T            or
+	GT_T            >
+	NOT_T           not
+	GTE_T           >=
+	DEFINE_T        define
+	LTE_T           <=
+	NUMBERP_T       number?
+	LPAREN_T        (
+	SYMBOLP_T       symbol?
+	RPAREN_T        )
+	LISTP_T         list?
+	QUOTE_T         '
+   3: zero?  null?  char?  string? cadr cddr caddr cdddr
+	ZEROP_T         zero?
+	NULLP_T         null?
+	CHARP_T         char?
+	STRINGP_T       string?
+	LISTOP_T        cadr
+	LISTOP_T        cddr
+	LISTOP_T        caddr
+	LISTOP_T        cdddr
+   4: some more symbols and a line of numbers
+	SYMBOL_T        some
+	SYMBOL_T        more
+	SYMBOL_T        symbols
+	AND_T           and
+	SYMBOL_T        a
+	SYMBOL_T        line
+	SYMBOL_T        of
+	SYMBOL_T        numbers
+   5: 1 123 12.23 .34 123 -1 -2.2 +15 +.5 +5.
+	NUMLIT_T        1
+	NUMLIT_T        123
+	NUMLIT_T        12.23
+	NUMLIT_T        .34
+	NUMLIT_T        123
+	NUMLIT_T        -1
+	NUMLIT_T        -2.2
+	NUMLIT_T        +15
+	NUMLIT_T        +.5
+	NUMLIT_T        +5.
+   6: 
+0 errors found in input file

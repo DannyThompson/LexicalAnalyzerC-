@@ -1,0 +1,12 @@
+Input file: test7.ss
+   1: symbol 1 1. 1.2 .2 car cdr cons if else and or not define number? symbol? lambda list? zero? null? char? string? error + - / * = > < >= <= ( ) '
+   2: ; ignore this line please (cdr '(abcd) '(efgh))
+Error at 2,1: Invalid character found: ;
+   3: "string literal test"
+Error at 3,1: Invalid character found: "
+Error at 3,21: Invalid character found: "
+   4: symbol 1 1.2 define number? anobvious$error*thing (cdr '(car (cons '(abc) '(def)))
+Error at 4,38: Invalid character found: $
+   5: anobvious$error*thing2
+Error at 5,10: Invalid character found: $
+5 errors found in input file

@@ -1,0 +1,57 @@
+Input file: test6.ss
+   1: this file contains
+	SYMBOL_T        this
+	SYMBOL_T        file
+	SYMBOL_T        contains
+   2: int double ; ++ += and +
+	SYMBOL_T        int
+	SYMBOL_T        double
+Error at 2,12: Invalid character found: ;
+	ERROR_T         ;
+	PLUS_T          +
+	PLUS_T          +
+	PLUS_T          +
+	EQUALTO_T       =
+	AND_T           and
+	PLUS_T          +
+   3:     int var;
+	SYMBOL_T        int
+	SYMBOL_T        var
+Error at 3,12: Invalid character found: ;
+	ERROR_T         ;
+   4: var += 123456789 + abc++;
+	SYMBOL_T        var
+	PLUS_T          +
+	EQUALTO_T       =
+	NUMLIT_T        123456789
+	PLUS_T          +
+	SYMBOL_T        abc
+	PLUS_T          +
+	PLUS_T          +
+Error at 4,25: Invalid character found: ;
+	ERROR_T         ;
+   5: var+=123456789+abc++;
+	SYMBOL_T        var
+	PLUS_T          +
+	EQUALTO_T       =
+	NUMLIT_T        123456789
+	PLUS_T          +
+	SYMBOL_T        abc
+	PLUS_T          +
+	PLUS_T          +
+Error at 5,21: Invalid character found: ;
+	ERROR_T         ;
+   6: This     line contains@least $3$errors
+	SYMBOL_T        This
+	SYMBOL_T        line
+	SYMBOL_T        contains
+Error at 6,23: Invalid character found: @
+	ERROR_T         @
+	SYMBOL_T        least
+Error at 6,30: Invalid character found: $
+	ERROR_T         $
+	NUMLIT_T        3
+Error at 6,32: Invalid character found: $
+	ERROR_T         $
+	SYMBOL_T        errors
+7 errors found in input file
